@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    width: 100%;
+    padding-top: 70px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+}
+
+#navbar .container{
+    position: relative;
+}
+
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 0.336);
+    border: 1px solid black;
+}
+
+span .fa-navicon{
+    line-height: 27px;
+    color: black;
+}
+
+nav a img{
+    width: 280px;
+    height: 90px;
+}
+
+#background{
+    max-width: 100%;
+}
+
+#slider{
+    overflow: hidden;
+    position: absolute;
+}
+
+#slider ul{
+    list-style: none;
+    width: 1000%;
+    float: left;
+    animation: slider 45s infinite 1s ease-in-out;
+    padding: 0;
+    margin: 0;
+    z-index: -2;
+    position: relative;
+    overflow-x:hidden;
+}
+
+#slider ul li{
+    list-style: none;
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+#slider ul li img{
+    width: 100%;
+    height: 720px;
+}
+
+@keyframes slider{
+	0%,8%{left: 0;}
+	10%,18%{left: -100%;}
+	20%,28%{left: -200%;}
+    30%,38%{left: -300%;}
+    40%,48%{left: -400%;}
+	50%,58%{left: -500%;}
+    60%,68%{left: -600%;}
+    70%,78%{left: -700%;}
+	80%,88%{left: -800%;}
+    90%,98%{left: -900%;}
+}
+
+.background_overlay{
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index: -1;
+}
